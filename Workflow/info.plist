@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C9489AFF-96A0-4AC4-879E-878E1B2B62A8</string>
+				<string>DF4BEC1A-6B69-4C4D-AF28-9CC68BDA2E75</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -73,7 +73,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C9489AFF-96A0-4AC4-879E-878E1B2B62A8</key>
+		<key>DF4BEC1A-6B69-4C4D-AF28-9CC68BDA2E75</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -100,25 +100,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/bin/shortcuts run 'Share with AirDrop' --input-path "${@}" --output-path /dev/null</string>
-				<key>scriptargtype</key>
+				<key>inputmode</key>
 				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>shortcut</key>
+				<string>Share with AirDrop</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.automation.runshortcut</string>
 			<key>uid</key>
-			<string>C9489AFF-96A0-4AC4-879E-878E1B2B62A8</string>
+			<string>DF4BEC1A-6B69-4C4D-AF28-9CC68BDA2E75</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -296,13 +290,6 @@ Send files, text, and URLs with AirDrop via the [Universal Action](https://www.a
 			<key>ypos</key>
 			<real>160</real>
 		</dict>
-		<key>C9489AFF-96A0-4AC4-879E-878E1B2B62A8</key>
-		<dict>
-			<key>xpos</key>
-			<real>240</real>
-			<key>ypos</key>
-			<real>55</real>
-		</dict>
 		<key>D11C5E50-D798-48B8-9ED9-517EE8E9629E</key>
 		<dict>
 			<key>colorindex</key>
@@ -311,6 +298,13 @@ Send files, text, and URLs with AirDrop via the [Universal Action](https://www.a
 			<real>675</real>
 			<key>ypos</key>
 			<real>130</real>
+		</dict>
+		<key>DF4BEC1A-6B69-4C4D-AF28-9CC68BDA2E75</key>
+		<dict>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>55</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
