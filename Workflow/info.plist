@@ -6,6 +6,19 @@
 	<string>com.alfredapp.vitor.sharewithairdrop</string>
 	<key>connections</key>
 	<dict>
+		<key>1DCAF238-FCC5-42AC-8785-F427689DDA7D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4BD6F83C-1C0F-4640-BD00-E46D43CFA6A6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>213D1AC1-9A74-456F-9489-2554CB9EA0D8</key>
 		<array>
 			<dict>
@@ -36,7 +49,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>51E315A4-F0F5-48F5-B0D1-616BF481D1F2</string>
+				<string>1DCAF238-FCC5-42AC-8785-F427689DDA7D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,24 +58,26 @@
 				<false/>
 			</dict>
 		</array>
-		<key>51E315A4-F0F5-48F5-B0D1-616BF481D1F2</key>
+		<key>3E558F38-93BF-4031-BF9B-AB6CDE012AA5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>841352FF-AB47-476C-8169-8A1918666E69</string>
+				<string>EA58C7BB-A1DB-4154-955B-AB6BB764A130</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>_button1</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 		</array>
-		<key>841352FF-AB47-476C-8169-8A1918666E69</key>
+		<key>4BD6F83C-1C0F-4640-BD00-E46D43CFA6A6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D11C5E50-D798-48B8-9ED9-517EE8E9629E</string>
+				<string>3E558F38-93BF-4031-BF9B-AB6CDE012AA5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -77,7 +92,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>51E315A4-F0F5-48F5-B0D1-616BF481D1F2</string>
+				<string>1DCAF238-FCC5-42AC-8785-F427689DDA7D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -146,7 +161,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>D11C5E50-D798-48B8-9ED9-517EE8E9629E</string>
+			<string>EA58C7BB-A1DB-4154-955B-AB6BB764A130</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -164,7 +179,28 @@
 			<key>type</key>
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>51E315A4-F0F5-48F5-B0D1-616BF481D1F2</string>
+			<string>1DCAF238-FCC5-42AC-8785-F427689DDA7D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Install Shortcut</string>
+				<key>button2</key>
+				<string>Cancel</string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string>A Shorcut is required to perform this action.</string>
+				<key>title</key>
+				<string>Shortcut Not Installed</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>3E558F38-93BF-4031-BF9B-AB6CDE012AA5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -196,7 +232,24 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>841352FF-AB47-476C-8169-8A1918666E69</string>
+			<string>4BD6F83C-1C0F-4640-BD00-E46D43CFA6A6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputmode</key>
+				<integer>0</integer>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>shortcut</key>
+				<string>Share with AirDrop</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.runshortcut</string>
+			<key>uid</key>
+			<string>3AA7CB75-E314-4A45-BC6B-7A94E494D8C0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -221,23 +274,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputmode</key>
-				<integer>0</integer>
-				<key>outputmode</key>
-				<integer>0</integer>
-				<key>shortcut</key>
-				<string>Share with AirDrop</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.runshortcut</string>
-			<key>uid</key>
-			<string>3AA7CB75-E314-4A45-BC6B-7A94E494D8C0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>## Usage
@@ -251,6 +287,15 @@ Send files, text, and URLs with AirDrop via the [Universal Action](https://www.a
 ![Sending a URL](images/about/url.png)</string>
 	<key>uidata</key>
 	<dict>
+		<key>1DCAF238-FCC5-42AC-8785-F427689DDA7D</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
 		<key>213D1AC1-9A74-456F-9489-2554CB9EA0D8</key>
 		<dict>
 			<key>xpos</key>
@@ -272,32 +317,23 @@ Send files, text, and URLs with AirDrop via the [Universal Action](https://www.a
 			<key>ypos</key>
 			<real>205</real>
 		</dict>
-		<key>51E315A4-F0F5-48F5-B0D1-616BF481D1F2</key>
+		<key>3E558F38-93BF-4031-BF9B-AB6CDE012AA5</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>435</real>
+			<real>655</real>
 			<key>ypos</key>
-			<real>130</real>
+			<real>150</real>
 		</dict>
-		<key>841352FF-AB47-476C-8169-8A1918666E69</key>
+		<key>4BD6F83C-1C0F-4640-BD00-E46D43CFA6A6</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>595</real>
+			<real>585</real>
 			<key>ypos</key>
 			<real>160</real>
-		</dict>
-		<key>D11C5E50-D798-48B8-9ED9-517EE8E9629E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>9</integer>
-			<key>xpos</key>
-			<real>675</real>
-			<key>ypos</key>
-			<real>130</real>
 		</dict>
 		<key>DF4BEC1A-6B69-4C4D-AF28-9CC68BDA2E75</key>
 		<dict>
@@ -305,6 +341,15 @@ Send files, text, and URLs with AirDrop via the [Universal Action](https://www.a
 			<real>240</real>
 			<key>ypos</key>
 			<real>55</real>
+		</dict>
+		<key>EA58C7BB-A1DB-4154-955B-AB6BB764A130</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<real>795</real>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
